@@ -1,16 +1,10 @@
+RegisterServerEvent("blame")
+AddEventHandler("blame", function (param1)
+      print('^7[^1NewHacker^7]^5:'..param1)
+      TriggerClientEvent('chatMessage', -1, '^7[^1NewHacker^7]^2', {0,0,0} ,param1)
+end)
 
---[[[Citizen.CreateThread(function ()
-
-    local health = GetEntityHealth(GetPlayerPed(-1)) 
-
-    while health > 200 do
-        Citizen.Wait(5)
-        DropPlayer
-        
-
-
-
-
-end)´
-
-]]
+RegisterServerEvent("dropplayer")
+AddEventHandler("dropplayer", function (param1)
+    DropPlayer(param1, "200er Weste, bitte in den Support kommen")
+end)
