@@ -1,5 +1,16 @@
-RegisterServerEvent('announce')
-AddEventHandler('announce', function(param)
-  print('^7[^1Announcement^7]^5:'.. param)
-  TriggerClientEvent('chatMessage', -1, '^7[^1Announcement^7]^2', {0,0,0} --[[ this table is just rgb ]], param)
-end)
+
+--[[[Citizen.CreateThread(function ()
+
+    local health = GetEntityHealth(GetPlayerPed(-1)) 
+
+    while health > 200 do
+        Citizen.Wait(5)
+        DropPlayer
+        
+
+
+
+
+end)´
+
+]]
